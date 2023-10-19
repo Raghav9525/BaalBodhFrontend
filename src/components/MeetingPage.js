@@ -2,18 +2,15 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt'
-require('dotenv').config(); 
 
 function MeetingPage() {
     //get roomid from state objet value is key of obj
     const  roomID  = useLocation().state.value;
-    console.log(roomID)
-
     // create mymeeting instance
     const myMeeting = async (element) => {
+        const appID = parseInt(process.env.REACT_APP_APP_ID, 10);
+        const serviceSeceret = process.env.REACT_APP_SERVICE_SECRET
 
-        const appID = process.env.API_ID
-        const serviceSeceret = process.env.SERVICE_SECRET
         const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
             appID,
             serviceSeceret,

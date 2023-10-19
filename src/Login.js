@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
-import { NavLink,Router,useNavigate } from 'react-router-dom';
+import { NavLink,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 // import LoginValidation from './LoginValidation';
@@ -16,7 +16,7 @@ function Login() {
         password:''
     })
     const navigate = useNavigate();
-    const [errors,setErrors]= useState({})
+    // const [errors,setErrors]= useState({})
 
     // send login credential to server 
     const submitForm =(event) =>{
@@ -56,7 +56,7 @@ function Login() {
                         class="form-control" 
                         id="exampleInputEmail1"  
                         />
-                        {errors.email && <span className='text-danger'> {errors.email}</span>}
+                        {/* {errors.email && <span className='text-danger'> {errors.email}</span>} */}
                 </div>
                   
                 <div class="mb-3">
@@ -68,7 +68,7 @@ function Login() {
                         id="exampleInputPassword1" 
                         onChange={handleInput}  
                         />
-                        {errors.password && <span className='text-danger'> {errors.password}</span>}
+                        {/* {errors.password && <span className='text-danger'> {errors.password}</span>} */}
                 </div>
             
                 <button type="submit" onClick={submitForm} class="btn btn-primary">Login</button>

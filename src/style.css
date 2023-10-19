@@ -1,0 +1,455 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+	font-family :Roboto, sans-serif, arial;
+	font-size: 16px;
+	color: #242424;
+}
+
+.container1 {
+    border: 2px solid black;
+	padding: 10px 10%;
+    width:  100%;
+}
+
+
+/****************HEADER SECTION****************/
+.header {
+	background: #0055a4;
+	padding: 5px;
+}
+
+.header b {
+	background: #fff;
+	color: red;
+    padding: 10px;
+    margin-top: 5px;
+	font-size: 20px;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.header marquee {
+	font-size: 20px;
+	color: #ffffff;
+	width: 80%;
+    animation: rev 0.5s steps(23, end) infinite;
+
+    cursor: default;
+}
+
+
+
+.thought{
+    color: #e2be1c;
+}
+
+
+/* navbar section start  */
+
+#header{
+    width: 100%;
+    height: 65px;
+    background-color: 	#0055a4;
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    padding: 10px;
+    width: 140px;
+    color: white;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0080ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+
+
+/* homepage section start  */
+
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(61, 49, 49, 0.74)), url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    padding: 100px;
+}
+
+.content h1{
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.school-name-container {
+    display: inline-block;
+}
+
+.school-name {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+    animation: reveal 5s steps(23, end) infinite, blinkCursor 0.5s infinite;
+    filter: drop-shadow();
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    0%, 100% {
+        border-right: 2px solid transparent;
+    }
+    50% {
+        border-right: 2px solid #000;
+    }
+}
+
+.content button{
+    display: block;
+    margin-top: 50px;
+    width: fit-content;
+    border: 1px solid #1f94c6;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1c0e0e;
+    font-size: 18px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+.content button:hover{
+    background: #1a8ed1;
+}
+
+
+nav .fas{
+    display: none;
+}
+
+/* mediaquarry start  */
+@media screen and (max-width :965px) {
+    .school-name{
+        font-size: 40px;
+    }
+    .content h1{
+        font-size: 27px;
+    }
+
+    nav i.fas{
+        display: block;
+        font-size: 25px;
+        color:#fff ;
+    }
+    nav ul{
+        background: #061837;
+        /* background: #45b6fe; */
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
+
+
+/* responsive in tab view  */
+
+
+@media (max-width: 768px) {
+    .school-name {
+        font-size: 24px; /* Adjust font size for tablets */
+    }
+
+    .header marquee{
+        width: 100%;
+    }
+
+    .header b{
+        font-size: medium;
+        position: absolute;
+        margin: -5px 0;
+        z-index: 1;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+}
+
+/* responsive in mobile view  */
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+    .school-name {
+        font-size: 22px; /* Adjust font size for mobile devices */
+    }
+    .content h1{
+        font-size: 16px;
+    }
+    .header b{
+        display: none;
+    }
+
+    .header marquee{
+        width: 100%;
+    }
+    .content{
+        padding: 60px;
+    }
+}
+
+
+/* admin page */
+
+.adminpage{
+    background-color: rgb(166, 222, 241);
+}
+
+
+
+
+/* about us page */
+
+.containers {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(137, 161, 176, 0.8); /* Use an RGBA color with transparency for the background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    max-width: 100%; /* Ensure the container width is 100% of the viewport */
+}
+
+h1, h3 {
+    color: #fff; /* Change text color to white */
+}
+
+p {
+    color: #ddd; /* Change text color to a light gray */
+}
+
+.btn-know-more {
+    background-color: #ff7f00; /* Change button color to a bright orange */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff; /* Text color for the button */
+    transition: background-color 0.2s;
+}
+
+.btn-know-more:hover {
+    background-color: #ff5500; /* Change button color on hover */
+}
+
+h1 {
+    color: #333;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+h5 {
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    width: 200px;
+    margin: 10px 0;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+p {
+    color: #555;
+    padding-top: 10px;
+}
+
+.btn-know-more {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-know-more:hover {
+    background-color: #0056b3;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 30%;
+}
+
+.right-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    max-width: 40%;
+}
+
+.school-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+#principal {
+    height: 300px;
+    filter: drop-shadow(5px 5px 10px rgba(37, 33, 33, 0.7));
+}
+
+/* Gallery section styles */
+.gallery-section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-title {
+    order: 1;
+}
+
+.gallery-title h1 {
+    margin: 0;
+}
+
+.gallery-images {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-image {
+    width: calc(33.33% - 20px); /* Adjust the percentage as per your layout */
+    max-width: 100%; /* Allow images to shrink on smaller screens */
+    margin: 10px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 10px #252121);
+}
+
+nav .fas{
+    display: none;
+}
+
+/* Media query for screens with a maximum width of 780px */
+@media (max-width: 780px) {
+    .containers {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+    .left-content,
+    .right-content {
+        flex: 1;
+        max-width: 100%; /* Make both content sections take up the full width */
+        order: 0; /* Reset the order to the original */
+    }
+    h1 {
+        font-size: 24px; /* Decrease h1 font size on smaller screens */
+    }
+
+    /* Adjust gallery image width for smaller screens */
+    .gallery-image {
+        width: calc(50% - 20px); /* Adjust the percentage as per your layout */
+    }
+}
+

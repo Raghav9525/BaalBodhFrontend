@@ -34,7 +34,6 @@ function FacultyDetails() {
     <div>
       <Navbar />
       <div className="faculty-details">
-
         {showData ? (
           data.map((data, index) => (
             <div key={index} className="row">

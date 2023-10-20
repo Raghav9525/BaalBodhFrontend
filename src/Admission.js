@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
+import './style.css';
 
 function Admission() {
   // create state
@@ -50,7 +51,7 @@ function Admission() {
   return (
     <>
       <Navbar />
-      <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
+      <div id="admission" className='d-flex justify-content-center align-items-center vh-100'>
         <div className='bg-white p-3 rounded w-50'>
           
           <form onSubmit={submitForm}>

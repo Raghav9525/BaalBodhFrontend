@@ -39,7 +39,6 @@ function MeetingPage() {
 
     return (
         <div>
-            <h1>this is meeting page</h1>
             <div ref={myMeeting} />
 
         </div>

@@ -47,7 +47,7 @@ function Login() {
         <div>
             <Navbar />
             <div id="login" className='d-flex justify-content-center align-items-center vh-100'>
-                <div className='bg-white p-3 rounded w-50'>
+                <div className='bg-white  p-3 rounded w-50'>
                     <form onSubmit={submitForm}>
 
                         <div class="mb-3">

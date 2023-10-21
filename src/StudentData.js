@@ -57,31 +57,30 @@ function StudentData() {
         </form>
   
         {showData && (
-          <table>
-            <thead>
-              <tr>
-                <th>Roll</th>
-                <th>Name</th>
-                <th>Mobile</th>
-                <th>Gender</th>
-                <th>Class</th>
-                <th>Payment Method</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((student) => (
-                <tr key={student.key}>
-                    <td>{student.roll}</td>
-                  <td>{student.name}</td>
-                  <td>{student.mobile}</td>
-                  <td>{student.gender}</td>
-                  <td>{student.class}</td> {/* Updated key name */}
-                  <td>{student.pay_method}</td> {/* Updated key name */}
-                </tr>
-              ))}
-
-            </tbody>
-          </table>
+        <table className="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Roll</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Payment Method</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((student) => (
+            <tr key={student.key}>
+              <td>{student.roll}</td>
+              <td>{student.name}</td>
+              <td>{student.mobile}</td>
+              <td>{student.gender}</td>
+              <td>{student.class}</td>
+              <td>{student.pay_method}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
         )}
       </div>
     );

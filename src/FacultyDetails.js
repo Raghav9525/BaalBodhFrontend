@@ -34,6 +34,23 @@ function FacultyDetails() {
     <div>
       <Navbar />
       <div className="faculty-details">
+        {/* pricipal details should show default */}
+        <div className="row">
+          <div className="col-6 fac1 order-first">
+            <img src={require(`./images/Principal.jpg`)} alt="principal image" className="img-fluid" />
+
+          </div>
+          <div className="col-md-6 details">
+            <div className="row">
+              <div className="col-12">
+                <h3>Mukesh Kumar</h3>
+                <h5>Bachelor of Science</h5>
+                <h5>8340657136</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {showData ? (
           data.map((data, index) => (
             <div key={index} className="row">
@@ -53,12 +70,12 @@ function FacultyDetails() {
               </div>
             </div>
           ))
+          // ternery operator
         ) : (
-          <p>No faculty data available.</p>
+          <p>Add Faculty</p>
         )}
       </div>
     </div>
-
   );
 }
 

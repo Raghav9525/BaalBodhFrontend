@@ -67,7 +67,7 @@ function Admin() {
         <br />
         <br />
         {admission_req && (
-          <table>
+          <table className="table table-striped table-bordered">
             <thead>
               <tr>
                 <th>Name</th>

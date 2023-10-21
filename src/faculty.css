@@ -10,7 +10,7 @@
     padding:15px 80px;
     /* background-color: rgb(172, 172, 238); */
     background: linear-gradient(120deg,#2980b9, #8e44ad);
-     height: 100vh;
+     height: auto;
     overflow: hidden;
 } 
 .row{
@@ -19,7 +19,7 @@
 
 .fac1 img {
     border: 1.5px solid rgb(200, 57, 105);
-    border-radius: 100%;
+    border-radius: 20px;
     max-width: 50%;
     height: auto;
 }

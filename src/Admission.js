@@ -24,7 +24,7 @@ function Admission() {
 
     // Send data to the database if there are no validation errors
     if (values.nam !== "") {
-      axios.post("https://baalbodh.onrender.com/admission/", values)
+      axios.post("https://baalbodh.onrender.com/admission", values)
         .then((res) => {
           console.log("Data sent");
           setInsertionStatus({
@@ -106,8 +106,8 @@ function Admission() {
 
             <div className="mb-3">
               <label htmlFor="clas" className="form-label">Class</label>
-              <select name="clas" id="clas" onChange={handleInput}>
-                <option value="nursery" selected>Nursery</option>
+              <select name="clas" id="clas" value={values.clas} onChange={handleInput}>
+                <option value="nursery">Nursery</option>
                 <option value="lkg">LKG</option>
                 <option value="ukg">UKG</option>
               </select>

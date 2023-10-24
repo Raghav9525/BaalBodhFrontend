@@ -37,7 +37,7 @@ function FacultyUpload() {
     formDataToSend.append('myfile', formData.myfile);
     // Append the file
     if (formData.name !== "") {
-      axios.post('http://localhost:5000/admin/editfaculty', formDataToSend)
+      axios.post('https://baalbodh.onrender.com/admin/editfaculty', formDataToSend)
         .then((response) => {
           if (response.status === 200) {
             setIsInsertionSucessful(true);

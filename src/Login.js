@@ -23,7 +23,7 @@ function Login() {
     const submitForm = (event) => {
         event.preventDefault();
         // setErrors(LoginValidation(values));
-        axios.post("http://localhost:5000/login/", values)
+        axios.post("https://baalbodh.onrender.com/login", values)
             .then((res) => {
                 if (res.data.success) {
                     navigate('/admin');

@@ -10,7 +10,7 @@
     padding:15px 80px;
     /* background-color: rgb(172, 172, 238); */
     background: linear-gradient(120deg,#2980b9, #8e44ad);
-     height: 100vh;
+     height: auto;
     overflow: hidden;
 } 
 .row{

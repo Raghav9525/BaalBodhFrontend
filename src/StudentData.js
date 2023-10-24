@@ -13,7 +13,7 @@ function StudentData() {
     const showStudent = useCallback(async () => {
       try {
 
-        const url = `http://localhost:5000/admin/studentdata?clas=${selectedClas}`;
+        const url = `https://baalbodh.onrender.com/admin/studentdata?clas=${selectedClas}`;
         const response = await axios.get(url);
         
         // Check if the data array is empty or undefined

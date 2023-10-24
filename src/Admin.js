@@ -18,7 +18,7 @@ function Admin() {
       console.log("page rendered");
 
       try {
-        const response = await axios.get('http://localhost:5000/admin/admission');
+        const response = await axios.get('https://baalbodh.onrender.com/admin/admission');
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -29,7 +29,7 @@ function Admin() {
 
 
   const handleButtonClick = (roll, clas) => {
-    axios.post(`http://localhost:5000/admin/approve/${roll}/${clas}`)
+    axios.post(`https://baalbodh.onrender.com/admin/approve/${roll}/${clas}`)
       .then((res) => {
         console.log('handleButtonClicked');
         // You can also refresh the data here if needed

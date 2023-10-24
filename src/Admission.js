@@ -24,7 +24,7 @@ function Admission() {
 
     // Send data to the database if there are no validation errors
     if (values.nam !== "") {
-      axios.post("http://localhost:5000/admission/", values)
+      axios.post("https://baalbodh.onrender.com/admission/", values)
         .then((res) => {
           console.log("Data sent");
           setInsertionStatus({

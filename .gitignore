@@ -30,3 +30,5 @@ FormValidation.js
 custom1.css
 gitignore
 .env
+backend/
+server1.js

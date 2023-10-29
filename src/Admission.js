@@ -139,6 +139,7 @@ function Admission() {
                 />
                 <label htmlFor="cash" className="payment-radio">Cash</label>
               </div>
+              
             </div>
 
             <button type="submit" className="btn btn-primary">Submit</button>

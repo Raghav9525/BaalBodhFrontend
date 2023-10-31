@@ -32,15 +32,13 @@ function FacultyDetails() {
 
   return (
     <div>
-      <Navbar />
-      <div className="faculty-details">
-        {/* pricipal details should show default */}
+      <div className="faculty-details" style={{ backgroundColor: "#d9e4fd" }}>
+        {/* Principal details should show by default */}
         <div className="row">
-          <div className="col-6 fac1 order-first">
-            <img src={require(`./images/Principal.jpg`)} alt="principal image" className="img-fluid" />
-
+          <div className="col-lg-6 fac1 order-lg-first">
+            <img src={require(`./images/Principal.jpg`)} alt="Principal" className="img-fluid" />
           </div>
-          <div className="col-md-6 details">
+          <div className="col-lg-6 details">
             <div className="row">
               <div className="col-12">
                 <h3>Mukesh Kumar</h3>
@@ -50,16 +48,14 @@ function FacultyDetails() {
             </div>
           </div>
         </div>
-
+  
         {showData ? (
           data.map((data, index) => (
             <div key={index} className="row">
-              <div className="col-6 fac1 order-first">
+              <div className="col-lg-6 fac1 order-lg-first">
                 <img src={require(`./upload/${data.image}`)} alt={`Faculty ${index + 1}`} className="img-fluid" />
-                {/* <img src={require(`./upload/${data.image}`)} alt="im" /> */}
-
               </div>
-              <div className="col-md-6 details">
+              <div className="col-lg-6 details">
                 <div className="row">
                   <div className="col-12">
                     <h3>{data.name}</h3>
@@ -70,13 +66,13 @@ function FacultyDetails() {
               </div>
             </div>
           ))
-          // ternery operator
         ) : (
           <p>Add Faculty</p>
         )}
       </div>
     </div>
   );
+  
 }
 
 export default FacultyDetails;

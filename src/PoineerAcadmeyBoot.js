@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Import BrowserRouter and Routes
+import { Routes, Route } from 'react-router-dom'; // Import BrowserRouter and Routes
 import Login from './Login';
 import Admission from './Admission'; // Import your Admission component here
 import Home from './Home';
@@ -18,7 +18,6 @@ function PoineerAcadmeyBoot() {
 
     return (
         <>
-        <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/admission" element={<Admission />} />
@@ -31,7 +30,6 @@ function PoineerAcadmeyBoot() {
                 <Route path='/admin/studentdata' element={<StudentData />} />
                 <Route path='admin/editfaculty' element={<FacultyUpload />} />
             </Routes>
-        </BrowserRouter>
         </>
     );
 }

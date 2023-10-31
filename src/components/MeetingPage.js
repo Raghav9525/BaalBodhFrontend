@@ -38,9 +38,8 @@ function MeetingPage() {
     };
 
     return (
-        <div>
+        <div className='vh-100'>
             <div ref={myMeeting} />
-
         </div>
     )
 }

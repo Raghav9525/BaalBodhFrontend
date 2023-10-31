@@ -2,6 +2,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+
 }
 
 html,
@@ -13,27 +14,10 @@ body {
 	color: #242424;
 }
 
-.container1 {
-    border: 2px solid black;
-	padding: 10px 10%;
-    width:  100%;
-}
-
-/* Admission page */
-
-#admission{
-    background: linear-gradient(120deg,#2980b9, #8e44ad);
-}
-
-/* login page */
-#login{
-    /* padding-top: -20px; */
-    background: linear-gradient(120deg,#2980b9, #8e44ad);
-}
 
 /* Live class Page */
 .body-container{
-    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    /* background: linear-gradient(120deg,#2980b9, #8e44ad); */
     height: 100vh;
 }
 /* input field and button  style*/
@@ -42,16 +26,7 @@ body {
     display: flex;
 }
 
-.meeting-id label{
-    font-size: 18px;
-}
-/* input field */
-.meeting-id input{
-    margin-right: 5px;
-    height: 35px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
+
 .input-button button{
     height: 35px;
     width: 50px;
@@ -60,9 +35,9 @@ body {
 }
 
 /****************HEADER SECTION****************/
-.header {
+.header{
 	background: #0055a4;
-	padding: 5px;
+	padding: 4px;
 }
 
 .header b {
@@ -72,15 +47,6 @@ body {
     margin-top: 5px;
 	font-size: 20px;
     border-radius: 20px;
-    cursor: default;
-}
-
-.header marquee {
-	font-size: 20px;
-	color: #ffffff;
-	width: 80%;
-    animation: rev 0.5s steps(23, end) infinite;
-
     cursor: default;
 }
 
@@ -95,7 +61,7 @@ body {
 
 #header{
     width: 100%;
-    height: 65px;
+    height: 55px;
     background-color: #1E90FF;
     background-size: cover;
     background-position: center;
@@ -111,7 +77,7 @@ nav{
 .logo{
     padding: 10px;
     width: 140px;
-    font-size: 30px;
+    font-size: 29px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -151,9 +117,8 @@ nav ul li a:hover::after{
 /* homepage section start  */
 
 #home{
-    /* width: 100%;
-    height: 90vh; */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(61, 49, 49, 0.74)), url(images/bg.png); */
+    width: 60%;
+    height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(61, 49, 49, 0.74));
 
     background-size: cover;
@@ -182,25 +147,17 @@ nav ul li a:hover::after{
     overflow: hidden;
     position: relative;
     width: auto;
-    animation: reveal 5s steps(25, end) infinite, blinkCursor 0.5s infinite;
+    animation: reveal 5s steps(25, end) infinite, typeWriter 5s steps(15, end) infinite, blinkCursor 0.5s infinite;
     filter: drop-shadow();
 }
 
-@keyframes reveal {
-    0% {
+
+@keyframes typeWriter {
+    from {
         width: 0;
     }
-    100% {
+    to {
         width: 100%;
-    }
-}
-
-@keyframes blinkCursor {
-    0%, 100% {
-        border-right: 2px solid transparent;
-    }
-    50% {
-        border-right: 2px solid #000;
     }
 }
 
@@ -230,7 +187,7 @@ nav .fas{
 /* mediaquarry start  */
 @media screen and (max-width :965px) {
     .school-name{
-        font-size: 40px;
+        font-size: 25px;
     }
     .content h1{
         font-size: 27px;
@@ -284,76 +241,19 @@ nav .fas{
 }
 
 
-/* responsive in tab view  */
-
-
-@media (max-width: 768px) {
-    /* .home{
-        width: 100%;
-        height: 90vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(61, 49, 49, 0.74)), url(images/bg-mobile1.jpg);
-        background-size: cover;
-        background-position: center;
-    } */
-
-    .school-name {
-        font-size: 24px; /* Adjust font size for tablets */
-    }
-
-    .header marquee{
-        width: 100%;
-    }
-
-    .header b{
-        font-size: medium;
-        position: absolute;
-        margin: -5px 0;
-        z-index: 1;
-    }
-    .content h1{
-        font-size: 20px;
-    }
-}
-
-/* responsive in mobile view  */
-
- /* Media Query for Mobile Devices */
- @media (max-width: 480px) {
-
-    .school-name {
-        font-size: 22px; /* Adjust font size for mobile devices */
-    }
-    .content h1{
-        font-size: 16px;
-    }
-    .header b{
-        display: none;
-    }
-
-    .header marquee{
-        width: 100%;
-    }
-    .content{
-        padding: 60px;
-    }
-}
-
-
 /* admin page */
 
 .adminpage{
     background-color: rgb(166, 222, 241);
 }
 
-
-
-
 /* about us page */
-
 .containers {
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(137, 161, 176, 0.8); /* Use an RGBA color with transparency for the background */
+    /* margin: 0 auto;
+    padding: 20px; */
+    background-color: #d9e4fd;
+
+    /* background-color: rgba(137, 161, 176, 0.8); Use an RGBA color with transparency for the background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     display: flex;
@@ -363,21 +263,14 @@ nav .fas{
     max-width: 100%; /* Ensure the container width is 100% of the viewport */
 }
 
-h1, h3 {
-    color: #fff; /* Change text color to white */
-}
-
-p {
-    color: #ddd; /* Change text color to a light gray */
-}
 
 .btn-know-more {
-    background-color: #ff7f00; /* Change button color to a bright orange */
+    background-color: #ff7f00; 
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    color: #fff; /* Text color for the button */
+    color: #fff; 
     transition: background-color 0.2s;
 }
 
@@ -385,28 +278,6 @@ p {
     background-color: #ff5500; /* Change button color on hover */
 }
 
-h1 {
-    color: #333;
-    padding-bottom: 10px;
-    /* border-bottom: 2px solid black; */
-}
-
-h5 {
-    color: #333;
-    padding: 10px 0;
-    border-bottom: 2px solid black;
-    width: 200px;
-    margin: 10px 0;
-}
-
-h3 {
-    padding: 10px 0;
-}
-
-p {
-    color: #555;
-    padding-top: 10px;
-}
 
 .btn-know-more {
     padding: 10px 20px;
@@ -486,14 +357,16 @@ nav .fas{
 /* Media query for screens with a maximum width of 780px */
 @media (max-width: 780px) {
     .containers {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         text-align: center;
     }
     .left-content,
     .right-content {
         flex: 1;
-        max-width: 100%; /* Make both content sections take up the full width */
-        order: 0; /* Reset the order to the original */
+        max-width: 100%; 
+        /* Make both content sections take up the full width  */
+        order: 0; 
+        /* Reset the order to the original */
     }
     h1 {
         font-size: 24px; /* Decrease h1 font size on smaller screens */
@@ -504,4 +377,15 @@ nav .fas{
         width: calc(50% - 20px); /* Adjust the percentage as per your layout */
     }
 }
+
+
+
+.footer{
+    background-color: #1E90FF;
+    /* background-color: #cfdcfb; */
+}
+#admission{
+    font-weight: 200;
+}
+
 

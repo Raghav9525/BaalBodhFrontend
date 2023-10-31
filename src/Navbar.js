@@ -20,6 +20,12 @@ function Navbar() {
     setShowMenu(false);
   };
 
+  const closeMenuOnItemClick = () => {
+    if (showMenu) {
+        setShowMenu(false);
+    }
+};
+
   return (
     <div id="header">
       <div className="container">
@@ -29,14 +35,14 @@ function Navbar() {
           <ul id="sidemenu" style={{ right: showMenu ? '0' : '-200px' }}>
           <i className="fas" onClick={closeMenu}><AiOutlineClose style={{ fontSize: '32px' }} /> </i>
 
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/admission">Admission</Link></li>
-            <li><Link to="/liveclass">LiveClass</Link></li>
-            <li><Link to="/facultydata">Faculty</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/login"><BiSolidUser style={{ fontSize: '32px' }} /></Link></li>
+            <li><Link to="/" onClick={closeMenuOnItemClick}>Home</Link></li>
+            <li><Link to="/admission" onClick={closeMenuOnItemClick}>Admission</Link></li>
+            <li><Link to="/liveclass" onClick={closeMenuOnItemClick}>LiveClass</Link></li>
+            <li><Link to="/facultydata" onClick={closeMenuOnItemClick}>Faculty</Link></li>
+            <li><Link to="/about" onClick={closeMenuOnItemClick}>About Us</Link></li>
+            <li><Link to="/login" onClick={closeMenuOnItemClick}><BiSolidUser style={{ fontSize: '32px' }} /></Link></li>
           </ul>
-          <i className="fas" onClick={openMenu}><GiHamburgerMenu style={{ fontSize: '32px' }} /></i>
+          <i className="fas" onClick={openMenu}><GiHamburgerMenu style={{ fontSize: '28px' }} /></i>
         </nav>
       </div>
     </div>

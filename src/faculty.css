@@ -9,13 +9,13 @@
 .faculty-details{
     padding:15px 80px;
     /* background-color: rgb(172, 172, 238); */
-    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    /* background: linear-gradient(120deg,#2980b9, #8e44ad); */
      height: auto;
     overflow: hidden;
 } 
-.row{
+/* .row{
     padding:20px;
-}
+} */
 
 .fac1 img {
     border: 1.5px solid rgb(200, 57, 105);
@@ -24,14 +24,11 @@
     height: auto;
 }
 
-/* .details {
-    max-height: auto; 
-    overflow-y: auto;
-} */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .fac1 img {
+    #fac1 img {
         max-width: 100%;    
     }
+  
 }

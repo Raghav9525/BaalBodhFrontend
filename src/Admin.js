@@ -53,7 +53,6 @@ function Admin() {
 
   return (
     <div>
-      <AdminNavbar />
       <div class="adminpage">
 
         <h2>Admin Panel</h2>

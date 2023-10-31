@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './faculty.css';
-import Navbar from './Navbar';
 
 function FacultyDetails() {
   const [data, setData] = useState([]);

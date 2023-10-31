@@ -1,7 +1,6 @@
 
 import React, { useCallback, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Navbar from '../Navbar'
 
 function Home() {
   const [value, setValue] = useState('')

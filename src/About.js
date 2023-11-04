@@ -18,20 +18,23 @@ function About() {
                 </div>
             </div> */}
 
-            <div class="containers mb-2 ">
+            <div class="containers mb-2">
                 <div class="row">
                     <h1 class="fs-1 text-primary text-center" style={{ backgroundColor: "#d9e4fd" }}>About</h1>
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-4">
-                        <div class="fac1 card" style={{ backgroundColor: "#d9e4fd", border: "none" }}>
-                            <img className="rounded d-block w-100 img-fluid" src={require(`./images/Principal.jpg`)} style={{ height: "350px", maxWidth: "350px" }} alt="" />
-                            <h4 className='mt-4'>Principal:- Muskesh Kumar</h4>
+                    <div className="col-sm-4">
+                        <div className="fac1 card" style={{ backgroundColor: "#d9e4fd", border: "none" }}>
+                            <img
+                                className="rounded d-block w-100 img-fluid"
+                                src={require(`./images/Principal.jpg`)}
+                                alt=""
+                            />
+                            <h4 className="mt-4">Principal:- Mukesh Kumar</h4>
                         </div>
-
                     </div>
+
                     <div class="col-sm-6">
                         <div class="card">
-
                             <p className="p-2" style={{ textAlign: 'justify' }}>
                                 <h4>Welcome to BaalBodh SCHOOL</h4>
                                 Welcome to Baalbodh School, where we nurture young minds with care and creativity. Our dedicated principal, Mr. Mukesh Kumar leads the way in shaping a bright future for your little ones. With a gentle touch and a warm smile, he ensures that every child's first steps into education are full of joy and discovery.
@@ -39,8 +42,7 @@ function About() {
                         </div>
 
                         <div class="card">
-                            <h4 className='mt-2'>Our Vision</h4>
-
+                            <h4 className="mt-2">Our Vision</h4>
                             <p className="p-2" style={{ textAlign: 'justify' }}>
                                 At Baalbodh School, we create a playful environment where learning is an exciting adventure. Our principal, a true visionary, believes in the power of early education. With a team of caring teachers, we focus on building strong foundations in reading, writing, and arithmetic. We understand that every child is unique and encourage their individuality, sparking curiosity and imagination.
                             </p>
@@ -49,6 +51,7 @@ function About() {
                     <div className='col-sm-1'></div>
                 </div>
             </div>
+
 
             {/* <!-- Gallery Section --> */}
             <div class="containers gallery-section">

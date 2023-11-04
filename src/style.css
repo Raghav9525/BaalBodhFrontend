@@ -161,20 +161,6 @@ nav ul li a:hover::after{
     }
 }
 
-/* .content button{
-    display: block;
-    margin-top: 50px;
-    width: fit-content;
-    border: 1px solid #1f94c6;
-    padding: 14px 50px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #1c0e0e;
-    font-size: 18px;
-    transition: background 0.5s;
-    cursor: pointer;
-} */
-
 .content button:hover{
     background: #1a8ed1;
 }
@@ -388,4 +374,29 @@ nav .fas{
     font-weight: 200;
 }
 
+/* 
+Gallery Style */
+/* Gallery.css */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .video-row video {
+    width: 100%;
+    height: auto;
+    max-width: 50%; /* Two videos in one row on large screens */
+  }
+  
+  @media (max-width: 768px) {
+    .video-row video {
+      max-width: 100%; /* One video in a row on smaller screens (e.g., mobile) */
+    }
+  }
+  
 

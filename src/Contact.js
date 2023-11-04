@@ -29,9 +29,7 @@ function Contact() {
                                     <div class="col-sm-4">
                                         <div class="card bg-primary" style={{border: "none"}}>
                                             <p class="fs-5">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Cumque recusandae deleniti iusto tempore voluptate optio
-                                                odit, quis dignissimos asperiores quidem!
+                                            Welcome to Baalbodh School, where we nurture young minds with care and creativity. Our dedicated principal, Mr. Mukesh Kumar leads the way in shaping a bright future for your little child.He ensures that every child's first steps into education are full of joy and discovery.
                                             </p>
                                         </div>
                                     </div>
@@ -51,9 +49,7 @@ function Contact() {
                                     <div class="col-sm-4">
                                         <div class="card bg-primary" style={{border: "none"}}>
                                             <p class="fs-5">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Cumque recusandae deleniti iusto tempore voluptate optio
-                                                odit, quis dignissimos asperiores quidem!
+                                            At Baalbodh School, we create a playful environment where learning is an exciting adventure. Our principal, a true visionary, believes in the power of early education. Our teachers focus on building strong foundations in reading, writing, and arithmetic.
                                             </p>
                                         </div>
                                     </div>
@@ -73,9 +69,8 @@ function Contact() {
                                     <div class="col-sm-4">
                                         <div class="card bg-primary" style={{border: "none"}}>
                                             <p class="fs-5">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Cumque recusandae deleniti iusto tempore voluptate optio
-                                                odit, quis dignissimos asperiores quidem!
+                                            Welcome to Baalbodh School, where we nurture young minds with care and creativity. Our dedicated principal, Mr. Mukesh Kumar leads the way in shaping a bright future for your little child.he ensures that every child's first steps into education are full of joy and discovery.
+
                                             </p>
                                         </div>
                                     </div>

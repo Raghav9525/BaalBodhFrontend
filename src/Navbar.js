@@ -6,6 +6,8 @@ import { BiSolidUser } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi'; // Ensure the correct import
 import './style.css';
+import Gallery from './Gallery';
+
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -37,6 +39,8 @@ function Navbar() {
 
             <li><Link to="/" onClick={closeMenuOnItemClick}>Home</Link></li>
             <li><Link to="/admission" onClick={closeMenuOnItemClick}>Admission</Link></li>
+            <li><Link to="/gallery" onClick={closeMenuOnItemClick}>Gallery</Link></li>
+
             <li><Link to="/liveclass" onClick={closeMenuOnItemClick}>LiveClass</Link></li>
             <li><Link to="/facultydata" onClick={closeMenuOnItemClick}>Faculty</Link></li>
             <li><Link to="/about" onClick={closeMenuOnItemClick}>About Us</Link></li>

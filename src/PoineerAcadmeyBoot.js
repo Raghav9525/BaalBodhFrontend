@@ -11,6 +11,7 @@ import FacultyUpload from './FacultyUpload';
 import About from './About';
 import LiveClass from './components/LiveClass'
 import MeetingPage from './components/MeetingPage';
+import Gallery from './Gallery';
 
 
 
@@ -21,6 +22,7 @@ function PoineerAcadmeyBoot() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/admission" element={<Admission />} />
+                <Route path="/gallery" element={<Gallery />} />
                 <Route path="/facultydata" element={<FacultyDetails />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/liveclass" element={<LiveClass />} />

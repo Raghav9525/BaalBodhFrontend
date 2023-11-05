@@ -9,7 +9,7 @@ function FacultyDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const url = `http://localhost:5000/facultydata`;
+        const url = `https://baalbodh.onrender.com/facultydata`;
         const response = await axios.get(url);
 
         // Check if the response data is empty or undefined

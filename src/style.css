@@ -333,7 +333,9 @@ nav .fas{
     max-width: 100%; /* Allow images to shrink on smaller screens */
     margin: 10px;
     border-radius: 5px;
-    filter: drop-shadow(5px 5px 10px #252121);
+    filter: drop-shadow(5px 5px 10px rgba(37, 33, 33, 0.7));
+    /* filter: drop-shadow(5px 5px 10px #efe3e3); */
+
 }
 
 nav .fas{

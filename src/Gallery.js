@@ -34,36 +34,37 @@ function Gallery() {
       </div>
 
       <div className="containers gallery-section mt-2">
-      <div className="gallery-title">
-        <h1 style={{ textAlign: "center" }}>Videos</h1>
+        <div className="gallery-title">
+          <h1 style={{ textAlign: "center" }}>Videos</h1>
+        </div>
+        <div className="gallery-images me-2 ms-2">
+          <div className="video-row">
+            <video className='mb-1 pe-1 rounded' controls width="100%" height="auto">
+              <source src={require(`./Gallery/video1.mp4`)} type="video/mp4" />
+            </video>
+            <video className='mb-1 rounded' controls width="100%" height="auto">
+              <source src={require(`./Gallery/video2.mp4`)} type="video/mp4" />
+            </video>
+          </div>
+          <div className="video-row">
+            <video className='mb-1 pe-1 rounded' controls width="100%" height="auto">
+              <source src={require(`./Gallery/video3.mp4`)} type="video/mp4" />
+            </video>
+            <video className='mb-1 rounded' controls width="100%" height="auto">
+              <source src={require(`./Gallery/video4.mp4`)} type="video/mp4" />
+            </video>
+          </div>
+          <div className="video-row">
+            <video className='mb-1 pe-1 rounded' controls width="100%" height="auto">
+              <source src={require(`./Gallery/video5.mp4`)} type="video/mp4" />
+            </video>
+            <video className='mb-1 rounded' controls width="100%" height="auto">
+              <source src={require(`./Gallery/video6.mp4`)} type="video/mp4" />
+            </video>
+          </div>
+        </div>
       </div>
-      <div className="gallery-images">
-        <div className="video-row">
-          <video controls width="100%" height="auto">
-            <source src={require(`./Gallery/video1.mp4`)} type="video/mp4" />
-          </video>
-          <video controls width="100%" height="auto">
-            <source src={require(`./Gallery/video2.mp4`)} type="video/mp4" />
-          </video>
-        </div>
-        <div className="video-row">
-          <video controls width="100%" height="auto">
-            <source src={require(`./Gallery/video3.mp4`)} type="video/mp4" />
-          </video>
-          <video controls width="100%" height="auto">
-            <source src={require(`./Gallery/video4.mp4`)} type="video/mp4" />
-          </video>
-        </div>
-        <div className="video-row">
-          <video controls width="100%" height="auto">
-            <source src={require(`./Gallery/video5.mp4`)} type="video/mp4" />
-          </video>
-          <video controls width="100%" height="auto">
-            <source src={require(`./Gallery/video6.mp4`)} type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </div>
+
     </div>
   )
 }
